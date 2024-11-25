@@ -8,6 +8,10 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+.header {
+    text-align: center;
+}
+
 /* navigation bar */
 nav {
     padding: 0.8rem;
@@ -16,26 +20,15 @@ nav {
     margin: 0 15px;
 }
 
-.nav-logo img{
-    width: 150px;
-    height: auto;
-}
-
 .nav-bar {
     list-style: none;
     /* padding: 0; */
     margin: 0;
     display: flex;
-    align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     padding: 10px 20px;
     background-color: #333;
 }
-
-/* nav .nav, nav .nav-logo {
-    margin: 0.5rem;
-    display: inline;
-} */
 .nav a {
     color: white;
     text-decoration: none;
@@ -51,16 +44,9 @@ nav {
 /* intro section */
 
 #intro {
-    /* padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 2rem;
-    padding-bottom: 2rem; */
     padding: 2rem 10% 3rem;
     text-align: center;
-}
-
-.header {
-    text-align: center;
+    font-size: 25px;
 }
 
 #intro button {
@@ -72,22 +58,27 @@ nav {
     padding: 1rem;
 }
 
-/* succeed-info section */
+.intro-content {
+    display: flex;
+    align-items: center;
+}
 
-#succeed-info {
+/* project-info section */
+
+#project-info {
     padding: 2rem 10% 3rem;
 }
 
-#succeed-info h2 {
+#project-info h2 {
     margin-bottom: 1rem;
 }
 
-#succeed-info h3 {
+#project-info h3 {
     text-align: center;
     margin-bottom: 1rem;
 }
 
-#succeed-info .card {
+#project-info .card {
     display: inline-block;
     vertical-align: top;
     min-height: 175px;
@@ -95,6 +86,14 @@ nav {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
+
+#project-info img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
 /* pre-footer */
 #pre-footer {
     display: flex;
@@ -110,7 +109,7 @@ nav {
     padding: 20px;
 }
 
-#pre-footer h3{
+#pre-footer div h3{
     font-size: 18px;
     margin-bottom: 10px;
     font-weight: bold;
@@ -126,6 +125,29 @@ nav {
 #pre-footer p:hover {
     color: #00bfff;
     cursor: pointer;
+}
+
+/* skills section */
+
+#skill {
+    padding: 2rem 10% 3rem;
+    text-align: center;
+    font-size: 25px;
+}
+
+.skill-content ul {
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-content ul li {
+    list-style: none;
+}
+
+#skill h2{
+    margin-bottom: 1rem;
 }
 
 /* footer */
